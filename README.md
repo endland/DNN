@@ -36,8 +36,8 @@ apt-get install libboost-all-dev
 * install utilities
 ```bash
 apt update
-pt install git
-git install net-tools
+apt install git
+apt install net-tools
 apt install net-tools
 apt install vim-tiny
 ```
