@@ -4,6 +4,7 @@
 * CUDA install
 * MeCab install
 
+
 ## Compile & Execution
 Assume cuMat directory is in the same row.
 ```bash
@@ -12,6 +13,14 @@ make
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:../cuMat
 ./test
 ```
+* If you get an error, test.cpp:8:17: fatal error: png.h: No such file or directory
+
+```bash
+apt-get install libpng12-0
+apt-get install libpng-dev
+find / -name png.h
+```
+
 #### [Type of processing]
 * autoencoder: 
 * cnn: CONVOLUTION NEURAL NETWORK
