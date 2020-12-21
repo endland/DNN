@@ -3,6 +3,14 @@
 ## Prerequisite
 * CUDA install
 * MeCab install
+```bash
+git clone https://github.com/taku910/mecab.git
+cd mecab/
+./configure
+make
+make check
+make install
+```
 
 
 ## Compile & Execution
@@ -19,6 +27,10 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:../cuMat
 apt-get install libpng12-0
 apt-get install libpng-dev
 find / -name png.h
+```
+* install boost
+```bash
+apt-get install libboost-all-dev
 ```
 
 #### [Type of processing]
