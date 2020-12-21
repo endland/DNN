@@ -33,6 +33,16 @@ find / -name png.h
 apt-get install libboost-all-dev
 ```
 
+* install utilities
+```bash
+apt update
+pt install git
+git install net-tools
+apt install net-tools
+apt install vim-tiny
+```
+
+
 #### [Type of processing]
 * autoencoder: 
 * cnn: CONVOLUTION NEURAL NETWORK
