@@ -1,11 +1,14 @@
 # DNN
 
+
+# pull docker image
+
 ## Prerequisite
 * CUDA install
 * MeCab install
 ```bash
 git clone https://github.com/taku910/mecab.git
-cd mecab/
+cd mecab/mecab
 ./configure
 make
 make check
