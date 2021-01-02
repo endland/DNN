@@ -11,16 +11,16 @@
 
 std::vector<std::string> split(const std::string &str, char sep)
 {
-    std::vector<std::string> v;        // 分割結果を格納するベクター
-    auto first = str.begin();              // テキストの最初を指すイテレータ
-    while( first != str.end() ) {         // テキストが残っている間ループ
-        auto last = first;                      // 分割文字列末尾へのイテレータ
-        while( last != str.end() && *last != sep )       // 末尾 or セパレータ文字まで進める
+    std::vector<std::string> v;        // DIVIDED RESULT STORING VECTOR
+    auto first = str.begin();              // an iterator that points to the beginning of a text
+    while( first != str.end() ) {         // Loops while text remains
+        auto last = first;                      // Iterator to end of split string
+        while( last != str.end() && *last != sep )       //Go to the end or separator character
             ++last;
-        v.push_back(std::string(first, last));       // 分割文字を出力
+        v.push_back(std::string(first, last));       // Print split characters
         if( last != str.end() )
             ++last;
-        first = last;          // 次の処理のためにイテレータを設定
+        first = last;          // Configure Iterators to:
     }
     return v;
 }
@@ -51,7 +51,7 @@ public:
 
         for (; node; node = node->next) {
             string feature(node->feature);
-            //if (feature.find("名詞")==0 || feature.find("未知語")==0){
+            //if (feature.find("noun")==0 || feature.find("unknown_word")==0){
                 strcpy(buf,node->surface);
                 buf[node->length]='\0';
                 string surface(buf);
